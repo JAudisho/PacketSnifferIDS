@@ -1,0 +1,24 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build Packet Sniffer",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "-IC:/Program Files/WpdPack_4_1_2/WpdPack/Include",
+                "-LC:/Program Files/WpdPack_4_1_2/WpdPack/Lib",
+                "-o",
+                "sniffer.exe",
+                "src/sniffer.c",
+                "C:/Program Files/WpdPack_4_1_2/WpdPack/Lib/wpcap.lib",
+                "C:/Program Files/WpdPack_4_1_2/WpdPack/Lib/Packet.lib"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        }
+    ]
+}

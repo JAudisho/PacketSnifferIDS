@@ -1,0 +1,18 @@
+# Compiled files
+*.exe
+*.out
+*.o
+*.a
+
+# Python cache files
+*.pyc
+*.pyo
+__pycache__/
+
+# Logs
+logs/
+alerts.log
+
+# Dependencies
+pcap_dump/
+*.pcap
